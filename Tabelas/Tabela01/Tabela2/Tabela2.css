@@ -1,22 +1,40 @@
 @charset "utf-8";
-    *{
-        margin: 0%;
-        padding: 0%;
-    }
-
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    table{ 
-        border-collapse: collapse ;
-        margin: auto;
-    }
-
-    td{
-        border: 1px solid black;
-        padding: 30px;
-        width: 600px;
-        vertical-align: top;
-    }
-    
+table{
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+caption{
+    border:  1px solid rgb(47, 0, 255);
+    padding: 10px;
+    background-color: rgb(22, 12, 155);
+    color: white;
+}
+th, tr, td{
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(204, 204, 204);
+}
+.titul{
+    background-color:  rgb(204, 204, 204);;
+    color: rgb(0, 0, 0);
+}
+.num{
+    text-align: right;
+}
+#juju{
+    color:purple;
+}
+#tok{
+    color: red;
+}
+#spy{
+    color: rgb(255, 150, 166);
+}
+#hero{
+    color: green;
+}
+#one{
+    color: rgb(52, 83, 218);
+}

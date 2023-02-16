@@ -8,52 +8,77 @@
     <title>Alinhamento de dados na tabela</title>
 </head>
 <body>
+      <h1>Hoje,dia 16/02, aprenderemos hierarquias de uma tabela</h1>
+      <p>Elementos em níveis hierárquicos:</p>
+      <ol>
+        <li>
+            Table
+        </li>
+        <li>
+            caption
+        </li>
+        <li>
+            thead
+        </li>
+        
+        <li>
+            tbody
+        </li>
+        <li>
+            tfoot
+        </li>
+    </ol>
+    <p>Há outra coisa também muito importante para conrtibuiir com a sintaxe da nossa tabela, que é definir o escopo da tabela.Isso ajudará o navegador a mostrar o nosso site como preferencia. <br>
+    Para definir o escopo da nossa linha, é só definir a propriedade " SCOPE " , isso irá definir para onde a nossa tabela apresentará os dados. <br>
+    O SCOPE "row" define ao navegador que o dado será apresentado na mesma linnha da tabela, horizontalmente. <br>
+    Já o SCOPE "col" define que o dado será apresentado abaixo da tabela, verticalmente. </p>
+    <h2>
+        Agora vamos ao código!
+    </h2>
     <table>
-        <tr>
-            <Table>
+        <caption>Os mangás mais lidos de 2022</caption>
 
-                <tr>
-                    <td>Semestre 1</td>
-        
-                    <td>Semestre 2</td>
-        
-                    <td>Resultado</td>
-        
-                </tr>
-        
-                <tr>
-        
-                    <td>40</td>
-        
-                    <td>25</td>
-        
-                    <td>65</td>
-        
-                </tr>
-        
-                <tr>
-        
-                    <td>20</td>
-        
-                    <td>25</td>
+        <thead>
+           <tr>
+            <th class="titul">Mangá</th>
+            <th class="titul">Vendas </th>
+           </tr>
+        </thead>
 
-                    <td>45</td>
-        
-                </tr>
-        
-                <tr>
-        
-                    <td>40</td>
-                    
-                    <td>40</td>
-        
-                    <td>C4</td>
-        
-                </tr>
-        
-            </Table>
-        </tr>
+        <tbody>
+            <tr>
+                <td id="juju">Jujutsu Kaisen</td>
+                <td class="num">12.282,260</td>
+            </tr>
+            <tr>
+                <td id="tok">Tokyo Revengers</td>
+                <td class="num">11.048,067</td>
+            </tr>
+            <tr>
+                <td id="spy">SPYxFAMILY</td>
+                <td class="num">10.600,571</td>
+            </tr>
+            <tr>
+                <td id="one">ONE PIECE</td>
+                <td class="num">10.364,102</td>
+            </tr>
+            <tr>
+                <td id="hero">
+                    My Hero Academia
+                </td>
+                <td class="num">5.353,782</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>TOTAL:</th>
+                <td class="num">49.648,982</td>
+            </tr>
+        </tfoot>
+
     </table>
-    
+
 </body>
 </html>
