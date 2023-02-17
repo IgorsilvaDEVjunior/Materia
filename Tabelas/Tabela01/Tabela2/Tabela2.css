@@ -3,6 +3,13 @@ table{
     border-collapse: collapse;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    line-height: 6vh;
+    text-indent: 20px;
+}
 caption{
     border:  1px solid rgb(47, 0, 255);
     padding: 10px;
@@ -14,10 +21,9 @@ th, tr, td{
     border: 1px solid black;
     padding: 10px;
     font-weight: bold;
-    background-color: rgb(204, 204, 204);
 }
 .titul{
-    background-color:  rgb(204, 204, 204);;
+    background-color:  rgb(112, 211, 169);
     color: rgb(0, 0, 0);
 }
 .num{
@@ -38,3 +44,17 @@ th, tr, td{
 #one{
     color: rgb(52, 83, 218);
 }
+.tab2 > tbody > tr:nth-child(2n){
+    background-color: gray;
+}
+.tab2 > tbody > tr:nth-child(2n-1){
+    background-color: rgb(146, 185, 218);
+}
+.tab3{
+    position: relative;
+}
+.tab3 thead th{
+    position: sticky;
+    top:-1px;
+}
+

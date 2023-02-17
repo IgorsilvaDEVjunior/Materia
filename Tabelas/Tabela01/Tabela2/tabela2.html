@@ -77,8 +77,167 @@
                 <td class="num">49.648,982</td>
             </tr>
         </tfoot>
-
     </table>
 
+        <h2>Efeito zebrado</h2>
+
+        <p>O efeito zebrado muda a cor dos elementos da tabela com o intuito de facilitar a leiura da mesma.</p>
+        <p>Mas, como fazer esse efeito? <br>
+        Bom, é bem simples, basta selecionar as linhas, "TR" e usa um pseudo-elemento,o "nth-child(x)". <br>
+        No codigo,ficaria assim: <br>
+            <code>
+                tbody > tr:nth-child(x){ <br>
+                    } <br>
+            </code>
+            Sendo que no valor "X" se da o valor ao numero de repetções, se o valor de X = 2, as linhas mudarão de cor alternadamente, entre sim e não.           
+    </p>
+    <p>Há outras formas e fazer esse eefeito zebrado, como usando o parãmetro "odd" no lugar do "X". "ODD", em inglês, siguuinifica "impar".Isso fará com que esse efeito se se aplique nas "TR" impares.  * "ODD"=(2n-1).</p>
+    <p>O mesmo se aplica ao parâmetro "even", que significa, em inglês, "PAR".O que, logicamente, fará com uqe esse efeiti só se aplique nos "FR" pares.</p>
+    <p>SE, em alguma ocasião, você queira usar duas cores, como vermelho + azul,terá que criare dois valores, um com o parâmetro "OOD"e um outro com "EVEN"  * "EVEN"=(2n).</p>
+
+    <table class="tab2">
+        <caption>Os mangás mais lidos de 2022</caption>
+
+        <thead>
+           <tr>
+            <th class="titul">Mangá</th>
+            <th class="titul">Vendas </th>
+           </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Jujutsu Kaisen</td>
+                <td class="num">12.282,260</td>
+            </tr>
+            <tr>
+                <td>Tokyo Revengers</td>
+                <td class="num">11.048,067</td>
+            </tr>
+            <tr>
+                <td>SPYxFAMILY</td>
+                <td class="num">10.600,571</td>
+            </tr>
+            <tr>
+                <td>ONE PIECE</td>
+                <td class="num">10.364,102</td>
+            </tr>
+            <tr>
+                <td>
+                    My Hero Academia
+                </td>
+                <td class="num">5.353,782</td>
+            </tr>
+            <tr>
+                <th>ChainSawman</th>
+                <td class="num">4.789.435</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>TOTAL:</th>
+                <td class="num">54.438.417</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <h2>Tabelas com o cabeçalho fixo</h2>
+    <p>Para criar uma tabela com o cabeçalho fixo,é algum muito simples. Basta dar a tabela o parâmetro "position:"relative" e ao cabeçalho, o parâmetro "position:Z"sticky";.Somente isso não irá funcionar, nasta também especificar onde o cabeçalho ficrá "grudado". <br> Na maioria das vezes, se dá o valor "top:"0px";" ou "top:"-1px";</p>
+    <p>Ao fazer isso, o conteúdo dentro da "thead" ficará fixo, mas não ficará com o background anterior, por isso, dveá ser posto novamente o valor do background-color ou até mesmo da borda.</p>
+
+    <table class="tab3">
+        <caption>Os mangás mais lidos de 2022</caption>
+
+        <thead>
+           <tr>
+            <th class="titul">Mangá</th>
+            <th class="titul">Vendas </th>
+           </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Jujutsu Kaisen</td>
+                <td class="num">12.282,260</td>
+            </tr>
+            <tr>
+                <td>Tokyo Revengers</td>
+                <td class="num">11.048,067</td>
+            </tr>
+            <tr>
+                <td>SPYxFAMILY</td>
+                <td class="num">10.600,571</td>
+            </tr>
+            <tr>
+                <td>ONE PIECE</td>
+                <td class="num">10.364,102</td>
+            </tr>
+            <tr>
+                <td>
+                    My Hero Academia
+                </td>
+                <td class="num">5.353,782</td>
+            </tr>
+            <tr>
+                <th>ChainSawman</th>
+                <td class="num">4.789.435</td>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Jujutsu Kaisen</td>
+                    <td class="num">12.282,260</td>
+                </tr>
+                <tr>
+                    <td>Tokyo Revengers</td>
+                    <td class="num">11.048,067</td>
+                </tr>
+                <tr>
+                    <td>SPYxFAMILY</td>
+                    <td class="num">10.600,571</td>
+                </tr>
+                <tr>
+                    <td>ONE PIECE</td>
+                    <td class="num">10.364,102</td>
+                </tr>
+                <tr>
+                    <td>
+                        My Hero Academia
+                    </td>
+                    <td class="num">5.353,782</td>
+                </tr>
+                <tr>
+                    <th>ChainSawman</th>
+                    <td class="num">4.789.435</td>
+                </tr> <tbody>
+                    <tr>
+                        <td>Jujutsu Kaisen</td>
+                        <td class="num">12.282,260</td>
+                    </tr>
+                    <tr>
+                        <td>Tokyo Revengers</td>
+                        <td class="num">11.048,067</td>
+                    </tr>
+                    <tr>
+                        <td>SPYxFAMILY</td>
+                        <td class="num">10.600,571</td>
+                    </tr>
+                    <tr>
+                        <td>ONE PIECE</td>
+                        <td class="num">10.364,102</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            My Hero Academia
+                        </td>
+                        <td class="num">5.353,782</td>
+                    </tr>
+                    <tr>
+                        <th>ChainSawman</th>
+                        <td class="num">4.789.435</td>
+                    </tr>
+</table>
+<h1>ESSA TABELA FOI FEITA COM MUUUITA PREGUIÇA!!!!!</h1>          
 </body>
 </html>
